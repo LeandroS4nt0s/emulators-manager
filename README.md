@@ -17,7 +17,13 @@ The `emulators-manager` is a tool to manage Android and iOS emulators on macOS s
     cd emulators-manager
     ```
 
-3. Grant execute permission to the script:
+3. Navigate to the folder called main:
+
+    ```bash
+    cd main
+    ```
+
+4. Grant execute permission to the script:
 
     ```bash
     chmod +x emulators-manager.sh
@@ -25,7 +31,7 @@ The `emulators-manager` is a tool to manage Android and iOS emulators on macOS s
 
 ## Usage
 
-The `emulators-manager.sh` script provides an interactive interface to list and start Android and iOS emulators. To execute the script, simply use the following command:
+The `emulators-manager.sh` script provides an interactive interface to list and start Android and iOS emulators. To execute the script, simply use the following command into `main` folder:
 
 ```bash
 ./emulators-manager.sh
