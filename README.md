@@ -41,13 +41,24 @@ The `emulators-manager.sh` script provides an interactive interface to list and 
 ## Menu Options
 
 - **Choose a language:**
-  - Before starting, you will have the option to choose between English and Portuguese.
+  - Before starting, you will have the option to choose between English and Portuguese. Just type the number to select and press enter key.
+   
+    ![language](https://github.com/LeandroS4nt0s/emulators-manager/blob/main/resources/language.png)
+
+- **Menu:**
+  - The menu you can see all options available to your system.
+ 
+    ![menu](https://github.com/LeandroS4nt0s/emulators-manager/blob/main/resources/menu.png)
 
 - **Android Emulators Manager:**
   - When you select this option, you can list and start available Android emulators on your system.
+ 
+    ![android](https://github.com/LeandroS4nt0s/emulators-manager/blob/main/resources/android.png)
 
 - **iOS Emulators Manager:**
   - This option allows you to list and start available iOS emulators on your system. This option is only available if you are on a macOS system.
+ 
+     ![ios](https://github.com/LeandroS4nt0s/emulators-manager/blob/main/resources/ios.png)
 
 - **Contribute to this Project:**
     - This option opens the default browser to the GitHub page of the project, where you can contribute with suggestions, report issues, or submit pull requests.
