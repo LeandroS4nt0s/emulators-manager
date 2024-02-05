@@ -87,18 +87,40 @@ fi
 # Starting the Cycle!
 while true; do
     cmd=(dialog --clear --backtitle "$msg_contribute_to_project" --title "IOS/ANDROID EMULATOR MANAGER" --menu "$msg_start_cycle" 15 60 6)
-    options=(
-        1 "$msg_choose_android_emulator"
-        2 "$msg_choose_ios_emulator"
-        3 "$msg_contribute_to_project"
-        4 "$msg_choose_exit"
-    )
+    
+    # Check if the OS is macOS, then add iOS option
+    if [[ "$OSTYPE" != "darwin"* ]]; then
+         options=(
+            1 "$msg_choose_android_emulator"
+            2 "$msg_choose_ios_emulator"
+            3 "$msg_contribute_to_project"
+            4 "$msg_choose_exit"
+        )
+    
+    else 
+        options=(
+            1 "$msg_choose_android_emulator"
+            2 "$msg_contribute_to_project"
+            3 "$msg_choose_exit"
+        )
+    fi
+    
     choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
 
-    case $choice in
-    1) list_android_emulators_dialog ;;
-    2) list_ios_emulators_dialog ;;
-    3) open_github_repository ;;
-    4) exit ;;
-    esac
+    if [[ "$OSTYPE" != "darwin"* ]]; then
+        case $choice in
+            1) list_android_emulators_dialog ;;
+            2) list_ios_emulators_dialog ;;
+            3) open_github_repository ;;
+            4) exit ;;
+        esac
+    
+    else 
+        case $choice in
+            1) list_android_emulators_dialog ;;
+            2) open_github_repository ;;
+            3) exit ;;
+        esac
+    fi
+    
 done # Closing loop
