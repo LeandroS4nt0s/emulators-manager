@@ -89,7 +89,7 @@ while true; do
     cmd=(dialog --clear --backtitle "$msg_contribute_to_project" --title "IOS/ANDROID EMULATOR MANAGER" --menu "$msg_start_cycle" 15 60 6)
     
     # Check if the OS is macOS, then add iOS option
-    if [[ "$OSTYPE" != "darwin"* ]]; then
+    if [[ "$OSTYPE" == "darwin"* ]]; then
          options=(
             1 "$msg_choose_android_emulator"
             2 "$msg_choose_ios_emulator"
@@ -107,7 +107,7 @@ while true; do
     
     choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
 
-    if [[ "$OSTYPE" != "darwin"* ]]; then
+    if [[ "$OSTYPE" == "darwin"* ]]; then
         case $choice in
             1) list_android_emulators_dialog ;;
             2) list_ios_emulators_dialog ;;
