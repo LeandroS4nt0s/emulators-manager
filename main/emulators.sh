@@ -9,7 +9,11 @@ PARENT_DIR="$(dirname "$SCRIPT_DIR")"
 # Carrega os arquivos de funções
 source "$PARENT_DIR/functions/android/android_functions.sh"
 source "$PARENT_DIR/functions/ios/ios_functions.sh"
-source "$PARENT_DIR/functions/generals/general_functions.sh"
+source "$PARENT_DIR/functions/generals/open_github.sh"
+source "$PARENT_DIR/functions/generals/add_alias.sh"
+
+# adding alias emulators to the user profile
+add_alias_to_profile
 
 # Language selection
 echo "Choose your language"
