@@ -38,6 +38,24 @@ The `emulators-manager.sh` script provides an interactive interface to list and 
 ```
 
 
+When you run the script for the first time, you will see this message bellow. This show to you where the alias `em` was added and it drives you to run a code that helps you to load the alias from anywhere in the terminal.
+
+  ![message](https://github.com/LeandroS4nt0s/emulators-manager/blob/main/resources/message.png)
+
+## 
+
+After stop the script you must run the code suggested by the script (optional). the code is dynamic, it depends about your shell file. in this example `.bash_profile`. but maybe it will show to you `.bashrc` ,  `.bash_login `, `.zshrc` etc:
+
+```bash
+ source ~/.bash_profile  
+```
+## 
+
+Now you can just type `em` in any directory in the terminal:
+- **Exemple**:
+  
+ ![language](https://github.com/LeandroS4nt0s/emulators-manager/blob/main/resources/language.png)
+  
 ## Menu Options
 
 - **Choose a language:**
