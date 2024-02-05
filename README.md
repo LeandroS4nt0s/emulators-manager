@@ -1,7 +1,7 @@
 # Emulators Manager
 Boot your Android and IOS emulator in a quick and easy way
 
-The `emulators-manager` is a tool to manage Android and iOS emulators on macOS systems.
+The `emulators-manager` is a tool to manage Android and iOS emulators on yours systems.
 
 ## Installation
 
