@@ -26,7 +26,7 @@ The `emulators-manager` is a tool to manage Android and iOS emulators on yours s
 4. Grant execute permission to the script:
 
     ```bash
-    chmod +x emulators-manager.sh
+    chmod +x emulators.sh
     ```
 
 ## Usage
