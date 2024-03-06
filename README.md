@@ -31,10 +31,10 @@ The `emulators-manager` is a tool to manage Android and iOS emulators on yours s
 
 ## Usage
 
-The `emulators-manager.sh` script provides an interactive interface to list and start Android and iOS emulators. To execute the script, simply use the following command into `main` folder:
+The `emulators.sh` script provides an interactive interface to list and start Android and iOS emulators. To execute the script, simply use the following command into `main` folder:
 
 ```bash
-./emulators-manager.sh
+./emulators.sh
 ```
 
 
