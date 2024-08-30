@@ -92,7 +92,7 @@ fi
 
 # Starting the Cycle!
 while true; do
-    cmd=(dialog --clear --backtitle "$msg_contribute_to_project" --title "IOS/ANDROID EMULATOR MANAGER" --menu "$msg_start_cycle" 15 60 6)
+    cmd=(dialog --clear --backtitle "$msg_contribute_to_project" --title "$msg_title" --menu "$msg_start_cycle" 15 60 6)
     
     # Check if the OS is macOS, then add iOS option
     if [[ "$OSTYPE" == "darwin"* ]]; then
