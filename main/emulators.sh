@@ -118,14 +118,14 @@ while true; do
             1) list_android_emulators_dialog ;;
             2) list_ios_emulators_dialog ;;
             3) open_github_repository ;;
-            4) exit && clear;;
+            4) clear; exit ;;
         esac
     
     else 
         case $choice in
             1) list_android_emulators_dialog ;;
             2) open_github_repository ;;
-            3) exit && clear ;;
+            3) clear; exit ;;
         esac
     fi
     
