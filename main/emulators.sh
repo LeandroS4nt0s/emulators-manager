@@ -36,6 +36,7 @@ set_language() {
         msg_choose_ios_emulator="Choose an IOS emulator to start"
         msg_contribute_to_project="Contribute to this Project!"
         msg_start_cycle="Select an option!"
+        msg_title="IOS/ANDROID EMULATOR MANAGER"
         msg_choose_exit="Exit"
         ;;
     2)  # Português
@@ -47,6 +48,7 @@ set_language() {
         msg_choose_ios_emulator="Escolha um emulador IOS para iniciar"
         msg_contribute_to_project="Contribua com esse Projeto!"
         msg_start_cycle="Selecione um opção!"
+        msg_title="IOS/ANDROID GERENCIADOR DE EMULADORES"
         msg_choose_exit="Sair"
         ;;
     esac
@@ -116,14 +118,14 @@ while true; do
             1) list_android_emulators_dialog ;;
             2) list_ios_emulators_dialog ;;
             3) open_github_repository ;;
-            4) exit ;;
+            4) exit && clear;;
         esac
     
     else 
         case $choice in
             1) list_android_emulators_dialog ;;
             2) open_github_repository ;;
-            3) exit ;;
+            3) exit && clear ;;
         esac
     fi
     
